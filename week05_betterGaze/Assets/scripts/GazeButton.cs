@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GazeButton : MonoBehaviour {
 
-	
 	// Update is called once per frame
 	void Update () {
 		// STEP 0: (possible optimization) is the button close enough? if not, don't bother doing anything else
@@ -25,7 +24,7 @@ public class GazeButton : MonoBehaviour {
 			Ray ray = new Ray( Camera.main.transform.position, fromCameraToButton.normalized );
 
 			// determine how far the raycast should go
-			float maxRayDistance = 10f;
+			float maxRayDistance = 50f;
 
 			// construct a RaycastHit object
 			RaycastHit rayHit = new RaycastHit();

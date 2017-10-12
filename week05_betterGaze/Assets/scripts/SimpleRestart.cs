@@ -14,6 +14,7 @@ public class SimpleRestart : MonoBehaviour {
 			// ... then reload the current scene, by finding out the current scene and reloading it
 			SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex );
 			// DON'T FORGET: don't forget to disable "Auto-Generate" lighting in Lighting settings!
+			// and then manually calculate lighting by clicking "Bake Lighting" yourself
 		}
 	}
 }
